@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { NavLink, Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone } from "lucide-react";
-import { company, quoteMailto } from "@/lib/data";
+import { company, quoteMailto, logoUrl } from "@/lib/data";
 
 const NAV_LINKS = [
   { to: "/", label: "Hem" },
@@ -44,17 +44,11 @@ export default function Header() {
             data-testid="header-logo"
             aria-label="Treborg Bygg - Hem"
           >
-            <div className="w-10 h-10 bg-stone-900 text-amber-500 flex items-center justify-center font-display font-black text-lg">
-              T
-            </div>
-            <div className="leading-none">
-              <div className="font-display font-bold text-stone-900 text-lg tracking-tight">
-                Treborg Bygg
-              </div>
-              <div className="text-[11px] uppercase tracking-[0.2em] text-stone-500 mt-1">
-                i Skåne AB · Sedan {company.founded}
-              </div>
-            </div>
+            <img
+              src={logoUrl}
+              alt="Treborg Bygg i Skåne AB"
+              className="h-12 lg:h-14 w-auto object-contain"
+            />
           </Link>
 
           {/* Desktop nav */}

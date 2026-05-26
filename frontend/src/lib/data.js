@@ -215,6 +215,9 @@ export const galleryCategories = [
 export const heroImage =
   "https://static.wixstatic.com/media/40146f_d1f6746552d84891a60075623d157a80~mv2.jpg";
 
+export const logoUrl =
+  "https://customer-assets.emergentagent.com/job_bygg-portfolio/artifacts/fcltmnil_treborg-project-1024x521.png";
+
 export const aboutImage =
   "https://static.wixstatic.com/media/a4c183_f88306676db24a8698ed24441f6a2123~mv2.jpg";
 

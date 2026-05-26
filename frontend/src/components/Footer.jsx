@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin } from "lucide-react";
-import { company, services, quoteMailto } from "@/lib/data";
+import { company, services, quoteMailto, logoUrl } from "@/lib/data";
 
 export default function Footer() {
   return (
@@ -11,13 +11,12 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 lg:px-10 py-20 lg:py-24">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
           <div className="md:col-span-5">
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 bg-amber-700 text-white flex items-center justify-center font-display font-black text-lg">
-                T
-              </div>
-              <div className="font-display font-bold text-white text-xl">
-                Treborg Bygg
-              </div>
+            <div className="mb-6">
+              <img
+                src={logoUrl}
+                alt="Treborg Bygg i Skåne AB"
+                className="h-20 w-auto object-contain"
+              />
             </div>
             <p className="font-display text-3xl lg:text-4xl text-white tracking-tight leading-[1.1] max-w-md mb-8">
               Vi håller alltid vad vi lovar.
