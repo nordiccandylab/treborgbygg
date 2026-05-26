@@ -1,52 +1,35 @@
-import { useEffect } from "react";
 import "@/App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import axios from "axios";
+import { Toaster } from "@/components/ui/sonner";
 
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
-const API = `${BACKEND_URL}/api`;
-
-const Home = () => {
-  const helloWorldApi = async () => {
-    try {
-      const response = await axios.get(`${API}/`);
-      console.log(response.data.message);
-    } catch (e) {
-      console.error(e, `errored out requesting / api`);
-    }
-  };
-
-  useEffect(() => {
-    helloWorldApi();
-  }, []);
-
-  return (
-    <div>
-      <header className="App-header">
-        <a
-          className="App-link"
-          href="https://emergent.sh"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="https://avatars.githubusercontent.com/in/1201222?s=120&u=2686cf91179bbafbc7a71bfbc43004cf9ae1acea&v=4" />
-        </a>
-        <p className="mt-5">Building something incredible ~!</p>
-      </header>
-    </div>
-  );
-};
+import Layout from "@/components/Layout";
+import Home from "@/pages/Home";
+import Services from "@/pages/Services";
+import ServiceDetail from "@/pages/ServiceDetail";
+import Gallery from "@/pages/Gallery";
+import About from "@/pages/About";
+import Contact from "@/pages/Contact";
+import Admin from "@/pages/Admin";
+import NotFound from "@/pages/NotFound";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" data-testid="app-root">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />}>
-            <Route index element={<Home />} />
+          <Route element={<Layout />}>
+            <Route path="/" element={<Home />} />
+            <Route path="/tjanster" element={<Services />} />
+            <Route path="/tjanster/:slug" element={<ServiceDetail />} />
+            <Route path="/galleri" element={<Gallery />} />
+            <Route path="/om-oss" element={<About />} />
+            <Route path="/kontakt" element={<Contact />} />
+            <Route path="/admin" element={<Admin />} />
+            <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
       </BrowserRouter>
+      <Toaster position="bottom-right" richColors />
     </div>
   );
 }
