@@ -18,8 +18,8 @@ export const company = {
   ],
   contact: {
     email: "info@treborgbygg.se",
-    phone: "+46 (0)70 000 00 00",
-    address: "Trelleborg, Skåne",
+    phone: "073-401 04 63",
+    address: "Östergatan 62, 231 45 Trelleborg",
     org: "Treborg Bygg i Skåne AB",
   },
   partners: ["PEAB", "VEIDEKKE"],
