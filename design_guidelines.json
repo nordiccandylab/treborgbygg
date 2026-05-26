@@ -1,0 +1,189 @@
+{
+  "theme_and_archetype": {
+    "theme": "Light",
+    "archetype": "1 (Organic & Earthy)",
+    "description": "A trust-inspiring, reliable, and solid aesthetic. Focus on craftsmanship, Skåne locale, and professional construction work. Avoid SaaS floaty designs. Use grounded, matte, and physical visual cues.",
+    "emotional_tone": "Solid, reliable, experienced, local, approachable."
+  },
+  "typography": {
+    "headings": {
+      "family": "Cabinet Grotesk",
+      "weights": ["font-medium", "font-bold", "font-black"],
+      "styling": "tracking-tight for headings above text-2xl. Use font-bold for authoritative statements."
+    },
+    "body": {
+      "family": "Work Sans",
+      "weights": ["font-normal", "font-medium"],
+      "styling": "leading-relaxed for paragraphs."
+    },
+    "hierarchy": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl tracking-tighter text-balance",
+      "h2": "text-2xl sm:text-3xl lg:text-4xl tracking-tight",
+      "h3": "text-xl sm:text-2xl",
+      "h4": "text-lg sm:text-xl",
+      "overline": "uppercase tracking-[0.2em] text-xs sm:text-sm font-semibold text-amber-700"
+    }
+  },
+  "colors": {
+    "background": {
+      "primary": "bg-stone-50",
+      "secondary": "bg-stone-200",
+      "tertiary": "bg-stone-900",
+      "description": "Warm sand and stone grey for the matte, physical feel."
+    },
+    "text": {
+      "primary": "text-stone-900",
+      "secondary": "text-stone-600",
+      "on_dark": "text-stone-50"
+    },
+    "brand_accent": {
+      "primary": "bg-amber-700",
+      "hover": "hover:bg-amber-800",
+      "text": "text-amber-700"
+    },
+    "surfaces": {
+      "cards": "bg-white border border-stone-200",
+      "dark_section": "bg-stone-900 text-stone-50"
+    },
+    "forbidden_colors": ["#1B93A4", "#9D4CDD", "#7351B7", "Generic SaaS Blue"]
+  },
+  "layout_and_spacing": {
+    "general": "Generous spacing philosophy (p-12, p-16, p-24, py-32). Use strict geometric alignments mimicking architectural drafting.",
+    "grid_modes": {
+      "marketing_bento": "grid-cols-1 md:grid-cols-12 gap-8. Hero images span large columns, text overlaps.",
+      "gallery_tetris": "Asymmetric bento grids for the gallery section. Mix square, tall, and wide spans to create visual tension and avoid boring equal squares."
+    },
+    "borders_and_radius": "Sharp edges (rounded-none) or very subtle (rounded-sm). Avoid large corner radii. Emphasize straight architectural lines."
+  },
+  "surfaces_and_micro_themes": {
+    "header": "Solid background (bg-stone-50/95) with backdrop-blur-md and a crisp bottom border (border-stone-200).",
+    "footer": "Massive space (py-24). High contrast: bg-stone-900 with text-stone-300.",
+    "cards": "Flat background, 1px subtle border, no heavy shadows. Hover state: slight lift (-translate-y-1) and shadow-md.",
+    "hero_overlay": "Gradient overlay over images to maintain text contrast (bg-gradient-to-r from-stone-900/80 to-stone-900/30). Max overall opacity 40-50%."
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-amber-700 text-white rounded-none px-6 py-3 font-medium hover:bg-amber-800 transition-colors inline-flex items-center",
+      "secondary": "border-2 border-stone-900 text-stone-900 rounded-none px-6 py-3 font-medium hover:bg-stone-900 hover:text-white transition-colors"
+    },
+    "forms": "Use Shadcn customized components. Inputs should have square corners (rounded-none), bg-white, border-stone-300, focus:border-amber-700 focus:ring-1 focus:ring-amber-700.",
+    "gallery_lightbox": "Clicking an image expands it using a lightweight modal/lightbox. Use a framer-motion AnimatePresence overlay.",
+    "icons": "Use @phosphor-icons/react (Duotone weight) for high-end professional feel."
+  },
+  "motion_and_interactions": {
+    "scroll": "Use Lenis for smooth momentum scrolling.",
+    "hover": "All interactive elements must change state clearly. Text links get an underline expansion, cards lift.",
+    "entrance": "Staggered fade-up for gallery items and service cards.",
+    "accessibility": "Respect prefers-reduced-motion."
+  },
+  "image_urls": {
+    "hero": [
+      {
+        "url": "https://static.wixstatic.com/media/40146f_d1f6746552d84891a60075623d157a80~mv2.jpg",
+        "category": "Hero Background",
+        "description": "Main hero banner displaying construction work"
+      }
+    ],
+    "about": [
+      {
+        "url": "https://static.wixstatic.com/media/a4c183_f88306676db24a8698ed24441f6a2123~mv2.jpg",
+        "category": "Om oss Image",
+        "description": "About section showcasing the team or company vehicle"
+      }
+    ],
+    "services": [
+      {
+        "url": "https://static.wixstatic.com/media/40146f_a2d955b8b7e74d0db0c08eda26e6e641~mv2.jpg",
+        "category": "Renovering",
+        "description": "Service cover image for Renovering"
+      },
+      {
+        "url": "https://static.wixstatic.com/media/40146f_96288465b01540a4a02ff090f26d3ca4~mv2.jpg",
+        "category": "In & utvändig målning",
+        "description": "Service cover image for Målning"
+      },
+      {
+        "url": "https://static.wixstatic.com/media/40146f_a4f5aa98748243d494d1cb6cda8fe4f9~mv2.jpg",
+        "category": "Takläggning",
+        "description": "Service cover image for Takläggning"
+      },
+      {
+        "url": "https://static.wixstatic.com/media/40146f_4e143823f9ed46ccb09fc882943ece71~mv2.png",
+        "category": "Rivningstjänst",
+        "description": "Service cover image for Rivning"
+      }
+    ],
+    "gallery": [
+      {
+        "url": "https://static.wixstatic.com/media/40146f_40d0f09d6e404a0f9b4fe429b626f451~mv2.jpg",
+        "category": "Renovering",
+        "description": "Gallery photo"
+      },
+      {
+        "url": "https://static.wixstatic.com/media/40146f_7c39b9a07d6e4cfaae2eaa9a800d5b22~mv2.jpg",
+        "category": "Renovering",
+        "description": "Gallery photo"
+      },
+      {
+        "url": "https://static.wixstatic.com/media/40146f_59c745d52888430d8ca4b298b6d50af8~mv2.jpg",
+        "category": "Målning",
+        "description": "Gallery photo"
+      },
+      {
+        "url": "https://static.wixstatic.com/media/40146f_8ddb6f1d23fd4a47be5e574a3dda81b7~mv2.jpg",
+        "category": "Takläggning",
+        "description": "Gallery photo"
+      },
+      {
+        "url": "https://static.wixstatic.com/media/40146f_1ed71c01b232464991d02502010aaf0d~mv2.png",
+        "category": "Rivning",
+        "description": "Gallery photo"
+      },
+      {
+        "url": "https://static.wixstatic.com/media/40146f_3723bca04c6948379b9e1002bdd96c3a~mv2.jpg",
+        "category": "Referensprojekt - Peab The Edge Hyllie",
+        "description": "Gallery photo of Peab project"
+      },
+      {
+        "url": "https://static.wixstatic.com/media/40146f_a2207c4483c04b119f7919303e42244c~mv2.jpg",
+        "category": "Referensprojekt",
+        "description": "Gallery photo"
+      },
+      {
+        "url": "https://static.wixstatic.com/media/40146f_6240e8c88da245b0849dac2a42e85891~mv2.jpg",
+        "category": "Referensprojekt",
+        "description": "Gallery photo"
+      }
+    ],
+    "contact": [
+      {
+        "url": "https://static.wixstatic.com/media/a4c183_c8f73ae6c59b47558e0c738b4d65e6f1~mv2.jpg",
+        "category": "Contact Background",
+        "description": "Background image for the contact form section"
+      }
+    ],
+    "textures": [
+      {
+        "url": "https://static.prod-images.emergentagent.com/jobs/50cdce5b-b784-47e7-95ab-d0581887f9eb/images/748930ec4b829879fc36d243ce08a6ac2f21ee2671bc09f6cf6c9a0c344f7839.png",
+        "category": "Concrete Texture",
+        "description": "Subtle background texture for solid sections"
+      },
+      {
+        "url": "https://static.prod-images.emergentagent.com/jobs/50cdce5b-b784-47e7-95ab-d0581887f9eb/images/23e6af168f94ec2cd755ccba727bf9180ad0a5c91ba69bd5ec879fc5b6789c9d.png",
+        "category": "Wood Texture",
+        "description": "Subtle background texture for warmer sections"
+      }
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Build a multi-page marketing site using React Router. Pages required: Home, Services (with detail views), Gallery, About, Contact, Admin View.",
+    "ALL UI TEXT MUST BE IN SWEDISH.",
+    "Hero Section: Use tagline 'Din lokala byggpartner'. Implement heavy overlap of typography on the hero background image. Use bg-black/40 overlay on the hero image to ensure text readability.",
+    "Gallery: Implement a robust filterable gallery component. Categories: Alla, Renovering, Målning, Takläggning, Rivning, Referensprojekt. Implement a lightbox feature for clicked images.",
+    "Contact & Admin: Build an 'Offertförfrågan' form that saves to a database. Build a simple Admin view route to list received requests.",
+    "Trust Signals: Dedicate a section displaying partners 'PEAB' and 'VEIDEKKE'. Use bold, uppercase typography for these logos instead of placeholders. Also feature years in business (since 2017).",
+    "Forms: Do not use native inputs. Install and use Shadcn Form, Input, and Textarea. Customize their appearance to match the architectural theme (sharp corners, earthy focus rings).",
+    "Testing: ALL interactive and key informational elements MUST include a 'data-testid' attribute (e.g., data-testid='contact-submit-button').",
+    "Do NOT use 'Inter' font. Use 'Cabinet Grotesk' for headings and 'Work Sans' for body text."
+  ]
+}
