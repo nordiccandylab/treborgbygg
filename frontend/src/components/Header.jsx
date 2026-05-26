@@ -118,7 +118,7 @@ export default function Header() {
                 key={link.to}
                 to={link.to}
                 end={link.to === "/"}
-                data-testid={`mobile-nav-${link.label.toLowerCase()}`}
+                data-testid={`mobile-nav-${link.label.toLowerCase().replace(/\s/g, "-")}`}
                 className={({ isActive }) =>
                   `font-display text-2xl tracking-tight ${
                     isActive ? "text-amber-700" : "text-stone-900"
