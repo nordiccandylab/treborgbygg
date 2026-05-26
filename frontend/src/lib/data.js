@@ -220,3 +220,10 @@ export const aboutImage =
 
 export const contactImage =
   "https://static.wixstatic.com/media/a4c183_c8f73ae6c59b47558e0c738b4d65e6f1~mv2.jpg";
+
+// Förgenererad mailto-länk för "Begär offert"-knappar
+export const quoteMailto = `mailto:${"info@treborgbygg.se"}?subject=${encodeURIComponent(
+  "Offertförfrågan"
+)}&body=${encodeURIComponent(
+  "Hej Treborg Bygg,\n\nJag skulle vilja ha en kostnadsfri offert på följande projekt:\n\n- Tjänst (renovering, målning, takläggning, rivning, annat):\n- Plats:\n- Önskad tidsplan:\n- Beskrivning:\n\nKontaktuppgifter:\nNamn:\nTelefon:\n\nVänliga hälsningar,"
+)}`;

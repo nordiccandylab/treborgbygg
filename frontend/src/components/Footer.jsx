@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin } from "lucide-react";
-import { company, services } from "@/lib/data";
+import { company, services, quoteMailto } from "@/lib/data";
 
 export default function Footer() {
   return (
@@ -77,13 +77,13 @@ export default function Footer() {
               </li>
             </ul>
 
-            <Link
-              to="/kontakt"
+            <a
+              href={quoteMailto}
               className="mt-8 inline-flex items-center bg-amber-700 hover:bg-amber-800 text-white px-6 py-3 font-display font-medium text-sm transition-colors"
               data-testid="footer-cta"
             >
               Begär kostnadsfri offert
-            </Link>
+            </a>
           </div>
         </div>
 

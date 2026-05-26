@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { ArrowRight, ArrowUpRight, CheckCircle2, Hammer, PaintRoller, Home as HomeIcon, Wrench } from "lucide-react";
-import { company, services, heroImage, aboutImage, galleryImages } from "@/lib/data";
+import { company, services, heroImage, aboutImage, galleryImages, quoteMailto } from "@/lib/data";
 
 const SERVICE_ICONS = {
   renovering: HomeIcon,
@@ -48,14 +48,14 @@ export default function Home() {
               className="mt-10 flex flex-wrap gap-4 animate-fade-up"
               style={{ animationDelay: "0.3s" }}
             >
-              <Link
-                to="/kontakt"
+              <a
+                href={quoteMailto}
                 className="inline-flex items-center gap-2 bg-amber-700 hover:bg-amber-800 text-white px-7 py-4 font-display font-medium transition-colors"
                 data-testid="hero-cta-primary"
               >
                 Begär kostnadsfri offert
                 <ArrowRight className="w-4 h-4" />
-              </Link>
+              </a>
               <Link
                 to="/galleri"
                 className="inline-flex items-center gap-2 border-2 border-stone-50 text-stone-50 hover:bg-stone-50 hover:text-stone-900 px-7 py-4 font-display font-medium transition-colors"
@@ -305,14 +305,14 @@ export default function Home() {
               </h2>
             </div>
             <div className="lg:col-span-4 lg:text-right">
-              <Link
-                to="/kontakt"
+              <a
+                href={quoteMailto}
                 className="inline-flex items-center gap-2 bg-amber-700 hover:bg-amber-800 text-white px-8 py-5 font-display font-medium text-lg transition-colors"
                 data-testid="home-bottom-cta"
               >
                 Kontakta oss
                 <ArrowRight className="w-5 h-5" />
-              </Link>
+              </a>
             </div>
           </div>
         </div>

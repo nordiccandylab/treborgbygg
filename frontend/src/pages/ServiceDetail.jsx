@@ -1,6 +1,6 @@
 import { Link, useParams, Navigate } from "react-router-dom";
 import { ArrowRight, ArrowUpRight, CheckCircle2 } from "lucide-react";
-import { services, galleryImages } from "@/lib/data";
+import { services, galleryImages, quoteMailto } from "@/lib/data";
 
 export default function ServiceDetail() {
   const { slug } = useParams();
@@ -68,14 +68,14 @@ export default function ServiceDetail() {
                   </li>
                 ))}
               </ul>
-              <Link
-                to="/kontakt"
+              <a
+                href={quoteMailto}
                 className="mt-8 w-full inline-flex items-center justify-center gap-2 bg-amber-700 hover:bg-amber-800 text-white px-6 py-4 font-display font-medium transition-colors"
                 data-testid="service-detail-cta"
               >
                 Kontakta oss för en kostnadsfri offert
                 <ArrowRight className="w-4 h-4" />
-              </Link>
+              </a>
             </div>
           </div>
         </div>

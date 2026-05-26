@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { NavLink, Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone } from "lucide-react";
-import { company } from "@/lib/data";
+import { company, quoteMailto } from "@/lib/data";
 
 const NAV_LINKS = [
   { to: "/", label: "Hem" },
@@ -85,13 +85,13 @@ export default function Header() {
               <Phone className="w-4 h-4" />
               {company.contact.phone}
             </a>
-            <Link
-              to="/kontakt"
+            <a
+              href={quoteMailto}
               className="hidden md:inline-flex items-center bg-amber-700 hover:bg-amber-800 text-white px-5 py-3 font-display font-medium text-sm transition-colors"
               data-testid="header-cta"
             >
               Begär offert
-            </Link>
+            </a>
 
             <button
               type="button"
@@ -128,13 +128,13 @@ export default function Header() {
                 {link.label}
               </NavLink>
             ))}
-            <Link
-              to="/kontakt"
+            <a
+              href={quoteMailto}
               className="mt-4 inline-flex items-center justify-center bg-amber-700 text-white px-5 py-4 font-display font-medium"
               data-testid="mobile-cta"
             >
               Begär offert
-            </Link>
+            </a>
           </nav>
         </div>
       )}

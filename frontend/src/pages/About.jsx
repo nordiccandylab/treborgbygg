@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
-import { company, aboutImage } from "@/lib/data";
+import { company, aboutImage, quoteMailto } from "@/lib/data";
 
 export default function About() {
   return (
@@ -116,14 +116,14 @@ export default function About() {
           <h2 className="font-display font-bold text-3xl sm:text-4xl tracking-tighter max-w-xl leading-tight">
             Har du ett projekt på gång? Vi lyssnar gärna.
           </h2>
-          <Link
-            to="/kontakt"
+          <a
+            href={quoteMailto}
             className="inline-flex items-center gap-2 bg-amber-700 hover:bg-amber-800 text-white px-7 py-4 font-display font-medium transition-colors"
             data-testid="about-cta"
           >
             Kontakta oss
             <ArrowRight className="w-4 h-4" />
-          </Link>
+          </a>
         </div>
       </section>
     </div>
